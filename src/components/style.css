@@ -26,6 +26,7 @@
 }
 
 .content__btn {
+  height: 45px;
   padding: 12px 36px;
   color: inherit;
   font: inherit;
