@@ -1,0 +1,31 @@
+.todo__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  min-width: 230px;
+  height: 50px;
+  font-size: inherit;
+  color: #222;
+  cursor: move;
+}
+
+.todo__item-closebtn {
+  position: absolute;
+  top: 2px;
+  right: 8px;
+  font-size: 25px;
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+  transition: .35s;
+  color: #fff;
+}
+
+.todo__item-closebtn:before, .cart__item-btn:after {
+  content: ' ';
+  height: 33px;
+  width: 2px;
+  transition: .35s;
+}
