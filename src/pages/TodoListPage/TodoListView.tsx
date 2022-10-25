@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { FC } from 'react';
 
 import TodoCard from '../../components/TodoCard/TodoCard';
+import { Todo, TodoListViewProps } from './types';
+
 import './style.css';
 
-const TodoListView = props => {
+const TodoListView: FC<TodoListViewProps> = props => {
 
   return (
     <div className="wrapper">
@@ -21,7 +23,7 @@ const TodoListView = props => {
         </button>
       </div>
         
-      {props.todos.map((item, index) => {
+      {props.todos.map((item: Todo, index: number) => {
         return (
           <TodoCard 
             key={index}

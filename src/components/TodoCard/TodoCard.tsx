@@ -1,9 +1,15 @@
-import React from 'react'
+import React, { FC } from 'react'
 import Draggable from 'react-draggable';
 
 import './styles.css'
+import { TodoCardProps } from './types';
 
-const TodoCard = ({ item = {}, index, updatePositionTodo = () => {}, deleteTodo = () => {}  }) => {
+const TodoCard: FC<TodoCardProps> = ({ 
+  item,
+  index, 
+  updatePositionTodo,
+  deleteTodo,
+}) => {
   return (
     <Draggable
       defaultPosition={item.defaultPos}
@@ -17,4 +23,4 @@ const TodoCard = ({ item = {}, index, updatePositionTodo = () => {}, deleteTodo 
   )
 }
 
-export default TodoCard
+export default TodoCard;
